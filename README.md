@@ -28,5 +28,4 @@ The repository is structured as follows:
 │   ├── Report.pdf         # Report of Week 1 Assignment
 │   ├── plots/             # PNG Files Generates from Week 1 Assignment
 │   └── README.md          # Description of Week 1 Assignment
-...
 └── README.md              # This file
