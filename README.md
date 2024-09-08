@@ -25,7 +25,7 @@ The repository is structured as follows:
 ├── HW1/
 │   ├── HW1.R              # Code for Week 1 Assignment
 │   ├── Equity_Premium.csv # Initial Data of Week 1 Assignment
-│   ├── Report.pdf         # Report of Week 1 Assignment
+│   ├── Report.pdf         # Report of Week 1 Assignment(.pdf Format)
 │   ├── plots/             # PNG Files Generates from Week 1 Assignment
-│   └── README.md          # Description of Week 1 Assignment
+│   └── report.md          # Report of Week 1 Assignment(.md Format)
 └── README.md              # This file
