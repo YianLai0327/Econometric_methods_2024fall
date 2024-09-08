@@ -39,7 +39,7 @@ Two trace calculations were performed using R:
   
   $\text{trace}(X (X'X)^{-1} X') = 11$
 
-- **Q2.2:** Trace of $I - X (X'X)^{-1} X'$ is computed as follow:
+- **Q2.2:** Trace of $I_n - X (X'X)^{-1} X'$ is computed as follow:
   
   $\text{trace}(I_n - X (X'X)^{-1} X') = 493$
 
