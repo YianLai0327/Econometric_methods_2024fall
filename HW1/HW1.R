@@ -19,31 +19,31 @@ library(tidyr)
 library(purrr)
 
 # Function to create time series plot
-# plot_time_series <- function(data, var_name) {
-#   ggplot(data, aes(x = Time, y = .data[[var_name]])) +
-#     geom_line() +
-#     labs(title = paste("Time Series of", var_name), y = var_name)
-# }
+plot_time_series <- function(data, var_name) {
+  ggplot(data, aes(x = Time, y = .data[[var_name]])) +
+    geom_line() +
+    labs(title = paste("Time Series of", var_name), y = var_name)
+}
 
-# # Function to create histogram with normal density
-# plot_histogram <- function(data, var_name) {
-#   ggplot(data, aes(x = .data[[var_name]])) +
-#     geom_histogram(aes(y = ..density..), bins = 30, fill = "lightblue", color = "black") +
-#     stat_function(fun = dnorm, args = list(mean = mean(data[[var_name]]), sd = sd(data[[var_name]])), color = "red") +
-#     labs(title = paste("Histogram of", var_name), x = var_name)
-# }
+# Function to create histogram with normal density
+plot_histogram <- function(data, var_name) {
+  ggplot(data, aes(x = .data[[var_name]])) +
+    geom_histogram(aes(y = ..density..), bins = 30, fill = "lightblue", color = "black") +
+    stat_function(fun = dnorm, args = list(mean = mean(data[[var_name]]), sd = sd(data[[var_name]])), color = "red") +
+    labs(title = paste("Histogram of", var_name), x = var_name)
+}
 
-# # List of variables to plot
-# vars <- c("y", "x_dfy", "x_infl", "x_svar", "x_tms", "x_tbl", "x_dfr", "x_dp", "x_ltr", "x_ep", "x_bmr", "x_ntis")
+# List of variables to plot
+vars <- c("y", "x_dfy", "x_infl", "x_svar", "x_tms", "x_tbl", "x_dfr", "x_dp", "x_ltr", "x_ep", "x_bmr", "x_ntis")
 
-# # Create and save plots
-# walk(vars, ~{
-#   time_series_plot <- plot_time_series(dt, .x)
-#   histogram_plot <- plot_histogram(dt, .x)
+# Create and save plots
+walk(vars, ~{
+  time_series_plot <- plot_time_series(dt, .x)
+  histogram_plot <- plot_histogram(dt, .x)
   
-#   ggsave(paste0("./plots/time_series_", .x, ".png"), time_series_plot, width = 10, height = 6)
-#   ggsave(paste0("./plots/histogram_", .x, ".png"), histogram_plot, width = 10, height = 6)
-# })
+  ggsave(paste0("./plots/time_series_", .x, ".png"), time_series_plot, width = 10, height = 6)
+  ggsave(paste0("./plots/histogram_", .x, ".png"), histogram_plot, width = 10, height = 6)
+})
 
 #Q2. Given the same size n and the X defined in this running example, show: 
 #Q2.1. trace(X(X'X)^-1X') = ?
