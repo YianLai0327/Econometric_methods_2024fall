@@ -31,4 +31,10 @@ The repository is structured as follows:
 ├── HW2/
 │   ├── HW2.pdf            # Hand Writing Week 2 Assignment(.pdf Format)
 │   └── report.md          # Report of Week 2 Assignment(.md Format)(not uploaded yet)
+├── HW3/
+│   ├── HW3.R              # Code for Week 3 Assignment
+│   ├── Equity_Premium.csv # Initial Data of Week 3 Assignment
+│   ├── HW3.pdf            # Report of Week 3 Assignment(.pdf Format)
+│   ├── plot.png           # PNG File Generates from Week 3 Assignment
+│   └── report.md          # Report of Week 2 Assignment(.md Format)(not uploaded yet)
 └── README.md              # This file
