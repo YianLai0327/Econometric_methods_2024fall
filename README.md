@@ -36,5 +36,14 @@ The repository is structured as follows:
 │   ├── Equity_Premium.csv # Initial Data of Week 3 Assignment
 │   ├── HW3.pdf            # Report of Week 3 Assignment(.pdf Format)
 │   ├── plot.png           # PNG File Generates from Week 3 Assignment
-│   └── report.md          # Report of Week 2 Assignment(.md Format)(not uploaded yet)
+│   └── report.md          # Report of Week 3 Assignment(.md Format)(not uploaded yet)
+├── HW4/
+│   ├── 計量方法HW4         # Week 4 Assignment
+├── HW5/
+│   ├── HW5.R              # Code for Week 5 Assignment
+│   ├── Equity_Premium.csv # Initial Data of Week 5 Assignment
+│   ├── report.pdf         # Report of Week 5 Assignment(.pdf Format)
+│   ├── report.docx        # Report of Week 5 Assignment(.docx Format)
+│   ├── Kernel_Density_vs_Normal.png #PNG File Output of Week 5 Assignment
+│   └── report.md          # Report of Week 3 Assignment(.md Format)(not uploaded yet)
 └── README.md              # This file
