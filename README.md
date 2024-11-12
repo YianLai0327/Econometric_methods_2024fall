@@ -53,4 +53,8 @@ The repository is structured as follows:
 │   ├── report.docx        # Report of Week 6 Assignment(.docx Format)
 │   ├── outputs/*          # outputs png files of Week 6 Assignment
 │   └── report.md          # Report of Week 6 Assignment(.md Format)(not uploaded yet)
+├── HW7/
+│   ├── HW7.r              # Code for Week 7 Assignment
+│   ├── HW7.pdf            # Report of Week 7 Assignment(.pdf Format)
+│   ├── report_p2.docx     # Report of Week 7 Assignment Problem 2(.docx Format)
 └── README.md              # This file
