@@ -91,18 +91,14 @@ loo_cv_values <- sapply(models, function(model) model$loo_cv)
 
 #Plot the selection model statistics of all models by 折線圖
 #define the output figure's height and width
-
 png("HW8/selection_model_statistics.png", width = 900, height = 600)
 par(mfrow = c(3, 2))
-#x asix be plot as log2 scale
-pl
-# plot(1:length(model_predictors), r2_values, type = "l", xlab = "Model Index", ylab = "R^2", main = "R^2")
-# plot(1:length(model_predictors), adjusted_r2_values, type = "l", xlab = "Model Index", ylab = "Adjusted R^2", main = "Adjusted R^2")
-# plot(1:length(model_predictors), aic_values, type = "l", xlab = "Model Index", ylab = "AIC", main = "AIC")
-# plot(1:length(model_predictors), bic_values, type = "l", xlab = "Model Index", ylab = "BIC", main = "BIC")
-# plot(1:length(model_predictors), cp_values, type = "l", xlab = "Model Index", ylab = "Cp", main = "Cp")
-# plot(1:length(model_predictors), loo_cv_values, type = "l", xlab = "Model Index", ylab = "LOO CV", main = "LOO CV")
 plot(1:length(model_predictors), r2_values, type = "l", xlab = "Model Index", ylab = "R^2", main = "R^2")
+plot(1:length(model_predictors), adjusted_r2_values, type = "l", xlab = "Model Index", ylab = "Adjusted R^2", main = "Adjusted R^2")
+plot(1:length(model_predictors), aic_values, type = "l", xlab = "Model Index", ylab = "AIC", main = "AIC")
+plot(1:length(model_predictors), bic_values, type = "l", xlab = "Model Index", ylab = "BIC", main = "BIC")
+plot(1:length(model_predictors), cp_values, type = "l", xlab = "Model Index", ylab = "Cp", main = "Cp")
+plot(1:length(model_predictors), loo_cv_values, type = "l", xlab = "Model Index", ylab = "LOO CV", main = "LOO CV")
 dev.off()
 
 
